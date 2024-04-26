@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: url("images/caption-bg.png") no-repeat;
+}
+.header {
+  position: absolute;
+  background: url("images/caption-bg.png") no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+.logo {
+  color: black;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navbar a {
+  position: relative;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 6px;
+  margin-left: 40px;
+}
+.navbar a:hover {
+  transition: 0.5s;
+}
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: 0.5s;
+}
+.navbar a:hover::before {
+  width: 100%;
+}
+.navbar .girisyap {
+  border: 1px solid rgba(0, 0, 0, 0.663);
+  border-radius: 5px;
+}
+.navbar .girisyap:hover {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: inset 5px 0px 20px rgba(0, 0, 0, 0.116);
+  transition: 0.5s;
+}
+.navbar .girisyap:hover::before {
+  width: 0%;
+}
+.navbar .active {
+  color: #9c7d3a;
+}
+.navbar .active:before {
+  background: #9c7d3a;
+}
+#section1 {
+  width: 100%;
+  height: 293px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5);
+}
+#section1 #caption {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+#section2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -110px;
+  opacity: 90%;
+}
+.card {
+  background-color: #fff;
+  width: 300px;
+  height: 250px;
+  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+.card h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: #f3f5ea;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.footer .footer-content {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 65%;
+}
