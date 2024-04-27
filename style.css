@@ -122,6 +122,7 @@ body,
 #card3 {
   margin-right: 100px;
 }
+
 .hesap-olustur {
   display: flex;
   justify-content: center;
@@ -161,4 +162,9 @@ body,
   font-size: 15px;
   font-weight: 400;
   opacity: 65%;
+}
+
+.favorite-star {
+  width: 20px;
+  height: 20px;
 }
