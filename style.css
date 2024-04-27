@@ -10,9 +10,9 @@ body {
 body,
 .header {
   background: url("images/coins-main-bg.jpg") no-repeat;
-  background-size: 2600px;
-  background-position-x: -700px;
-  background-position-y: 0px;
+  background-size: 2700px;
+  background-position-x: -730px;
+  background-position-y: -10px;
 }
 
 .header {
