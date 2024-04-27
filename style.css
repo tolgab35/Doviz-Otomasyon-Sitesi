@@ -6,12 +6,17 @@
 }
 body {
   min-height: 100vh;
-  background: url("images/caption-bg.png") no-repeat;
+}
+body,
+.header {
+  background: url("images/coins-main-bg.jpg") no-repeat;
+  background-size: 2600px;
+  background-position-x: -700px;
+  background-position-y: 0px;
 }
 
 .header {
   position: absolute;
-  background: url("images/caption-bg.png") no-repeat;
   top: 0;
   left: 0;
   width: 100%;
