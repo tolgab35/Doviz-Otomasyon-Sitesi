@@ -8,6 +8,7 @@ body {
   min-height: 100vh;
   background: url("images/caption-bg.png") no-repeat;
 }
+
 .header {
   position: absolute;
   background: url("images/caption-bg.png") no-repeat;
@@ -23,7 +24,7 @@ body {
 }
 .logo {
   color: black;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   text-decoration: none;
 }
@@ -37,7 +38,7 @@ body {
   margin-left: 40px;
 }
 .navbar a:hover {
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 .navbar a::before {
   content: "";
@@ -47,7 +48,7 @@ body {
   width: 0;
   height: 2px;
   background: black;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 .navbar a:hover::before {
   width: 100%;
@@ -60,7 +61,7 @@ body {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   box-shadow: inset 5px 0px 20px rgba(0, 0, 0, 0.116);
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 .navbar .girisyap:hover::before {
   width: 0%;
@@ -71,19 +72,21 @@ body {
 .navbar .active:before {
   background: #9c7d3a;
 }
-#section1 {
+
+.caption {
   width: 100%;
   height: 293px;
   display: flex;
   justify-content: center;
   box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5);
 }
-#section1 #caption {
+.caption h1 {
   font-size: 45px;
   font-weight: 400;
   margin-top: 40px;
 }
-#section2 {
+
+#cards {
   display: flex;
   justify-content: space-evenly;
   margin-top: -110px;
@@ -93,7 +96,7 @@ body {
   background-color: #fff;
   width: 300px;
   height: 250px;
-  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 0px 20px #8f7e3c88;
   border-radius: 15px;
   width: 300px;
   padding: 20px;
@@ -108,6 +111,29 @@ body {
   font-size: 17px;
   line-height: 1.5;
 }
+
+.hesap-olustur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hesap-olustur button {
+  background-color: #ffffff;
+  margin-top: 30px;
+  padding: 15px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.585);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 500;
+  box-shadow: 5px 0px 20px #0000002f;
+}
+.hesap-olustur button:hover {
+  background-color: #f3f5ea7d;
+  box-shadow: 0px 0px 0px #0000002f;
+  transition: 0.5s ease;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
