@@ -12,10 +12,11 @@ body,
   background: url("images/coins-main-bg.jpg") no-repeat;
   background-size: 2700px;
   background-position-x: -845px;
-  background-position-y: -10px;
+  background-position-y: 30px;
 }
 
 .header {
+  background-color: #f3f5ea;
   position: absolute;
   top: 0;
   left: 0;
