@@ -11,7 +11,7 @@ body,
 .header {
   background: url("images/coins-main-bg.jpg") no-repeat;
   background-size: 2700px;
-  background-position-x: -730px;
+  background-position-x: -845px;
   background-position-y: -10px;
 }
 
@@ -83,12 +83,14 @@ body,
   height: 293px;
   display: flex;
   justify-content: center;
-  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5);
 }
 .caption h1 {
   font-size: 45px;
   font-weight: 400;
   margin-top: 40px;
+}
+#anasayfa-caption {
+  box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 #cards {
