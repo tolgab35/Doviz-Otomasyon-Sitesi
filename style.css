@@ -242,8 +242,77 @@ body,
 }
 
 .container {
+  /*dönüştürücü sayfasındaki container*/
   width: 500px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
+}
+
+.signup-form {
+  background-color: #f3f5eac9;
+  width: 400px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.signup-form input {
+  background-color: #fbfbfb;
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0000007b;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+  font-size: 15px;
+}
+.signup-form input:focus {
+  outline: 0;
+  border: 1px solid #b99f42;
+}
+.signup-form button {
+  width: 360px;
+  height: 43px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00000043;
+  text-transform: uppercase;
+  background-color: #d8cc48;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.signup-form button:hover {
+  background-color: #ffdb5c;
+  border-color: #ffffff64;
+}
+.signup-form span p {
+  font-size: 13px;
+  text-align: center;
+  color: #0e0e0e;
+}
+.signup-form a {
+  color: #8a822f;
+  text-decoration: none;
+}
+.signup-form a:visited {
+  text-decoration: none;
+}
+.signup-form a:hover {
+  text-decoration: underline;
+}
+.signup-form h1 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #000000cf;
 }
