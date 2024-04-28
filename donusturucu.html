@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anasayfa</title>
+    <title>Dönüştürücü</title>
     <link rel="icon" href="images/favicon.svg" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,10 +18,10 @@
       <a href="index.html" class="logo">döviztakip</a>
 
       <nav class="navbar">
-        <a href="index.html" class="active">Anasayfa</a>
+        <a href="index.html">Anasayfa</a>
         <a href="piyasalar.html">Piyasalar</a>
-        <a href="">Dönüştürücü</a>
-        <a href="">Kayıt Ol</a>
+        <a href="donusturucu.html" class="active">Dönüştürücü</a>
+        <a href="kayitol.html">Kayıt Ol</a>
         <a href="" class="girisyap">Giriş Yap</a>
       </nav>
     </header>
@@ -29,6 +29,28 @@
     <section class="caption">
       <h1>En Güncel Döviz Kurlarıyla Hızlı Dönüşüm</h1>
     </section>
+
+    <div class="container">
+      <h1>Para Birimi Dönüştürücü</h1>
+      <div class="form">
+        <select id="kaynak" name="kaynak">
+          <option value="TL">TL</option>
+          <option value="USD">USD</option>
+        </select>
+
+        <select id="hedef" name="hedef">
+          <option value="USD">USD</option>
+          <option value="TL">TL</option>
+        </select>
+
+        <input type="number" id="miktar" name="miktar" required />
+
+        <button type="button">Dönüştür</button>
+      </div>
+      <div class="sonuc">
+        <p id="sonuc-metni"></p>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="footer-content">

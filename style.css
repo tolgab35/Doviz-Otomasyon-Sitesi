@@ -17,8 +17,8 @@ body,
 
 .header {
   background-color: #f3f5ea;
-  position: absolute;
-  top: 0;
+  position: sticky;
+  top: 100%;
   left: 0;
   width: 100%;
   padding: 10px 120px;
@@ -239,4 +239,11 @@ body,
 .piyasalar-textbox {
   margin-left: 100px;
   margin-right: 40px;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
