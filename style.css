@@ -163,12 +163,34 @@ body,
 }
 
 #piyasalar {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
-  padding-top: 80px;
+  padding-top: 50px;
 }
+
+#piyasalar div {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.334);
+}
+#piyasalar div h3 a {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+#piyasalar-all {
+  opacity: 55%;
+}
+#piyasalar-favorites:hover {
+  opacity: 55%;
+  transition: 0.1s ease;
+}
+
 #piyasalar-tablo {
   background-color: #f3f5eae5;
   border-collapse: collapse;
@@ -208,7 +230,7 @@ body,
 }
 .favorite-star:hover {
   opacity: 100%;
-  transition: 0.1s;
+  transition: 0.1s ease;
 }
 
 .piyasalar-textbox {
