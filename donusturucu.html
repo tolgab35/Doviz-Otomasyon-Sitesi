@@ -34,26 +34,48 @@
       <h1>En Güncel Döviz Kurlarıyla Hızlı Dönüşüm</h1>
     </section>
 
-    <div class="container">
-      <h1>Para Birimi Dönüştürücü</h1>
-      <div class="form">
-        <select id="kaynak" name="kaynak">
-          <option value="TL">TL</option>
-          <option value="USD">USD</option>
-        </select>
+    <div class="wrapper" style="position: relative; bottom: 140px">
+      <header>Para Birimi Dönüştürücü</header>
 
-        <select id="hedef" name="hedef">
-          <option value="USD">USD</option>
-          <option value="TL">TL</option>
-        </select>
+      <form action="#">
+        <div class="amount">
+          <p>Miktar giriniz</p>
+          <input type="text" value="1" />
+        </div>
 
-        <input type="number" id="miktar" name="miktar" required />
+        <div class="drop-list">
+          <div class="from">
+            <p style="font-size: 13px; font-weight: 500">Dönüştüreceğiniz</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="flag" />
+              <select>
+                <!-- Options tag are inserted from JavaScript -->
+              </select>
+            </div>
+          </div>
 
-        <button type="button">Dönüştür</button>
-      </div>
-      <div class="sonuc">
-        <p id="sonuc-metni"></p>
-      </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+
+          <div class="to">
+            <p style="font-size: 13px; font-weight: 500">Hedef</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/np.png" alt="flag" />
+              <select>
+                <!-- Options tag are inserted from JavaScript -->
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="exchange-rate">Döviz kuru alınıyor...</div>
+        <button>Döviz Kurunu Al</button>
+      </form>
+
+      <p style="text-align: center; font-size: 11px; font-weight: 400">
+        Dönüştürücümüzü Nasıl Kullanabilirsiniz? <br />1. Dönüştürmek
+        istediğiniz para birimini ve miktarı seçin. <br />
+        2. Hedef para birimini seçin. <br />3. "Dönüştür" butonuna tıklayın.
+      </p>
     </div>
 
     <footer class="footer">
