@@ -41,16 +41,18 @@
       </nav>
     </header>
 
-    <div class="wrapper">
-      <header>Currency Converter</header>
+    <div class="wrapper" style="margin-top: 50px">
+      <header>Döviz İşlemleri</header>
+
       <form action="#">
         <div class="amount">
-          <p>Enter Amount</p>
+          <p>Miktar giriniz</p>
           <input type="text" value="1" />
         </div>
+
         <div class="drop-list">
           <div class="from">
-            <p>From</p>
+            <p style="font-size: 13px; font-weight: 500">Dönüştüreceğiniz</p>
             <div class="select-box">
               <img src="https://flagcdn.com/48x36/us.png" alt="flag" />
               <select>
@@ -58,19 +60,21 @@
               </select>
             </div>
           </div>
+
           <div class="icon"><i class="fas fa-exchange-alt"></i></div>
           <div class="to">
-            <p>To</p>
+            <p style="font-size: 13px; font-weight: 500">Hedef</p>
             <div class="select-box">
-              <img src="https://flagcdn.com/48x36/np.png" alt="flag" />
+              <img src="https://flagcdn.com/48x36/tr.png" alt="flag" />
               <select>
                 <!-- Options tag are inserted from JavaScript -->
               </select>
             </div>
           </div>
         </div>
+
         <div class="exchange-rate">Getting exchange rate...</div>
-        <button>Get Exchange Rate</button>
+        <button>İşlemi Gerçekleştir</button>
       </form>
     </div>
 
@@ -79,5 +83,8 @@
         <p>&copy Copyright 2024. Tüm hakları saklıdır.</p>
       </div>
     </footer>
+
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
