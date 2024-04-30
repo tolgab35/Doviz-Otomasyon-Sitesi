@@ -1,6 +1,5 @@
 <?php
-
-    $dsn = "mysql:host=localhost;dbname=doviz_otomasyonu";
+    $dsn = "mysql:host=localhost;dbname=doviz_otomasyon";
     $dbusername = "root1";
     $dbpassword = "123456"; 
 
@@ -10,4 +9,3 @@
     } catch (PDOException $e) { 
         echo "Bağlantı başarısız". $e->getMessage();
     }
-?>
