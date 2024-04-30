@@ -126,28 +126,6 @@ body,
   margin-right: 100px;
 }
 
-.hesap-olustur {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hesap-olustur button {
-  background-color: #ffffff;
-  margin-top: 40px;
-  padding: 15px 20px;
-  border: 1px solid rgba(0, 0, 0, 0.585);
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 22px;
-  font-weight: 500;
-  box-shadow: 5px 0px 20px #0000002f;
-}
-.hesap-olustur button:hover {
-  background-color: #f3f5ea7d;
-  box-shadow: 0px 0px 0px #0000002f;
-  transition: 0.5s ease;
-}
-
 .footer {
   position: sticky;
   top: 100%;
@@ -241,14 +219,7 @@ body,
   margin-right: 40px;
 }
 
-.container {
-  /*dönüştürücü sayfasındaki container*/
-  width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-}
-
+/* Sign Up adapted from Magda Pimentel (https://codepen.io/magdaspimentel/pen/QvxwpZ) */
 .signup-form {
   background-color: #f3f5eac9;
   width: 400px;
