@@ -39,6 +39,108 @@
       </nav>
     </header>
 
+    <div>
+      <!-- Sign Up adapted from Magda Pimentel (https://codepen.io/magdaspimentel/pen/QvxwpZ) -->
+      <div class="signup-form">
+        <div class="signup">
+          <h1 style="text-align: center">Hesap Bilgileri</h1>
+
+          <div id="account-info" style="padding-left: 100px">
+            <div>
+              <span>İsim:</span><br />
+              <span>Soyisim:</span><br />
+              <span>Email:</span><br />
+              <span>Telefon:</span>
+            </div>
+
+            <div style="padding-left: 40px">
+              <span>İsim</span><br />
+              <span>Soyisim</span><br />
+              <span>Email</span><br />
+              <span>Telefon</span>
+            </div>
+          </div>
+
+          <br /><br />
+          <form action="includes/signup-form.php" method="post">
+            <button
+              type="submit"
+              name="send_registration"
+              id="registration"
+              style="background-color: rgb(165, 42, 42)"
+            >
+              <p>Hesabı Sil</p>
+            </button>
+          </form>
+        </div>
+
+        <div class="signup" style="padding-left: 50px">
+          <h1 style="text-align: center">Bilgileri Düzenle</h1>
+
+          <form action="includes/signup-form.php" method="post">
+            <p>
+              <input
+                type="text"
+                name="signup-firstname"
+                id="firstname"
+                required="zorunlu"
+                placeholder="İsim"
+              />
+            </p>
+            <p>
+              <input
+                type="text"
+                name="signup-lastname"
+                id="lastname"
+                required="zorunlu"
+                placeholder="Soyisim"
+              />
+            </p>
+            <p>
+              <input
+                type="text"
+                name="signup-email"
+                id="email"
+                required="zorunlu"
+                placeholder="Email"
+              />
+            </p>
+            <p>
+              <input
+                type="text"
+                name="signup-phone"
+                id="password"
+                required="zorunlu"
+                placeholder="Telefon"
+              />
+            </p>
+            <p>
+              <input
+                type="password"
+                name="signup-password"
+                id="password"
+                required="zorunlu"
+                placeholder="Şifre"
+              />
+            </p>
+
+            <button type="submit" name="send_registration" id="registration">
+              <p>Kayıt Ol</p>
+            </button>
+
+            <span>
+              <p>
+                Hesap oluşturarak <a href="">Üyelik Sözleşmesi</a>'ni
+                okuduğunuzu ve kabul ettiğinizi onaylıyorsunuz.
+              </p>
+            </span>
+
+            <br />
+          </form>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="footer-content">
         <p>&copy Copyright 2024. Tüm hakları saklıdır.</p>
