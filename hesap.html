@@ -61,8 +61,8 @@
             </div>
           </div>
 
-          <br /><br />
-          <form action="includes/signup-form.php" method="post">
+          <br /><br /><br /><br /><br /><br />
+          <form action="includes/account-delete-form.php" method="post">
             <button
               type="submit"
               name="send_registration"
@@ -77,11 +77,11 @@
         <div class="signup" style="padding-left: 50px">
           <h1 style="text-align: center">Bilgileri Düzenle</h1>
 
-          <form action="includes/signup-form.php" method="post">
+          <form action="includes/account-edit-form.php" method="post">
             <p>
               <input
                 type="text"
-                name="signup-firstname"
+                name="edit-firstname"
                 id="firstname"
                 required="zorunlu"
                 placeholder="İsim"
@@ -90,7 +90,7 @@
             <p>
               <input
                 type="text"
-                name="signup-lastname"
+                name="edit-lastname"
                 id="lastname"
                 required="zorunlu"
                 placeholder="Soyisim"
@@ -99,7 +99,7 @@
             <p>
               <input
                 type="text"
-                name="signup-email"
+                name="edit-email"
                 id="email"
                 required="zorunlu"
                 placeholder="Email"
@@ -108,7 +108,7 @@
             <p>
               <input
                 type="text"
-                name="signup-phone"
+                name="edit-phone"
                 id="password"
                 required="zorunlu"
                 placeholder="Telefon"
@@ -117,23 +117,16 @@
             <p>
               <input
                 type="password"
-                name="signup-password"
+                name="edit-password"
                 id="password"
                 required="zorunlu"
                 placeholder="Şifre"
               />
             </p>
 
-            <button type="submit" name="send_registration" id="registration">
-              <p>Kayıt Ol</p>
+            <button type="submit" name="send_save" id="save">
+              <p>Kaydet</p>
             </button>
-
-            <span>
-              <p>
-                Hesap oluşturarak <a href="">Üyelik Sözleşmesi</a>'ni
-                okuduğunuzu ve kabul ettiğinizi onaylıyorsunuz.
-              </p>
-            </span>
 
             <br />
           </form>
