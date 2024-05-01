@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2024 at 12:02 AM
+-- Generation Time: May 01, 2024 at 06:00 AM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.0.30
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -94,7 +94,7 @@ CREATE TABLE `kullanici` (
   `kullanici_adi` varchar(50) NOT NULL,
   `kullanici_soyadi` varchar(50) NOT NULL,
   `kullanici_email` varchar(50) NOT NULL,
-  `kullanici_tel` int(11) NOT NULL,
+  `kullanici_tel` bigint(11) NOT NULL,
   `kullanici_sifre` varchar(50) NOT NULL,
   `kayit_tarihi` datetime NOT NULL DEFAULT current_timestamp(),
   `cuzdan_id_fk` int(11) DEFAULT NULL
@@ -107,7 +107,11 @@ CREATE TABLE `kullanici` (
 INSERT INTO `kullanici` (`kullanici_id`, `kullanici_adi`, `kullanici_soyadi`, `kullanici_email`, `kullanici_tel`, `kullanici_sifre`, `kayit_tarihi`, `cuzdan_id_fk`) VALUES
 (1, 'Alperen', 'Ovalı', 'alperen@gmail.com', 2147483647, 'password1234', '2024-05-01 00:24:10', NULL),
 (2, 'Hüsnü', 'Koçer', 'hüsnü@gmail.com', 2147483647, 'hüsnü1234', '2024-05-01 00:27:10', NULL),
-(3, 'Tolga', 'Boz', 'tolga@gmail.com', 2147483647, 'tolga1234', '2024-05-01 00:28:00', NULL);
+(3, 'Tolga', 'Boz', 'tolga@gmail.com', 2147483647, 'tolga1234', '2024-05-01 00:28:00', NULL),
+(4, 'tolga', 'koçero', 'kocer42@gmail.com', 2147483647, 'kocero42', '2024-05-01 03:37:54', NULL),
+(5, 'tolga123', 'crazyboy', 'crazyboy@hotmail.com', 5553334422, 'tolga123', '2024-05-01 05:31:41', NULL),
+(6, 'sdaasd', 'sdfsdf', 'asdasd@gmail.com', 2147483647, 'tlga', '2024-05-01 06:18:53', NULL),
+(7, 'son', 'kayıt', '1111111@gmail.com', 2147483647, 'tlga123123', '2024-05-01 06:20:18', NULL);
 
 --
 -- Indexes for dumped tables
@@ -179,7 +183,7 @@ ALTER TABLE `islem`
 -- AUTO_INCREMENT for table `kullanici`
 --
 ALTER TABLE `kullanici`
-  MODIFY `kullanici_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `kullanici_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables

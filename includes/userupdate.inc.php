@@ -1,16 +1,20 @@
 <?php
     if($_SERVER["REQUEST_METHOD"] == "POST") {
-        $firstname = $_POST["signup-firstname"];
-        $lastname = $_POST["signup-lastname"];
-        $email = $_POST["signup-email"];
-        $phone = $_POST["signup-phone"];
-        $password = $_POST["signup-password"];
+        $firstname = $_POST["edit-firstname"];
+        $lastname = $_POST["edit-lastname"];
+        $email = $_POST["edit-email"];
+        $phone = $_POST["edit-phone"];
+        $password = $_POST["edit-password"];
 
         try {
             require_once "dbh.inc.php";
 
-            $query = "INSERT INTO kullanici (kullanici_adi, kullanici_soyadi, kullanici_email, kullanici_tel, kullanici_sifre) 
-            VALUES (:kullanici_adi, :kullanici_soyadi, :kullanici_email, :kullanici_tel, :kullanici_sifre);";
+            $query = "UPDATE kullanici 
+                    SET kullanici_adi = :firstname, 
+                    kullanici_soyadi = :lastname,
+                    kullanici_email = :email,
+                    kullanici_tel = :phone,
+                    kullanici_sifre = :password WHERE kullanici_id = 1;";
 
             $stmt = $pdo->prepare($query);
 
