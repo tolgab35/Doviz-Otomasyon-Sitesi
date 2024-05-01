@@ -10,19 +10,21 @@
             require_once "dbh.inc.php";
 
             $query = "UPDATE kullanici 
-                    SET kullanici_adi = :firstname, 
-                    kullanici_soyadi = :lastname,
-                    kullanici_email = :email,
-                    kullanici_tel = :phone,
-                    kullanici_sifre = :password WHERE kullanici_id = 1;";
+          SET kullanici_adi = :firstname, 
+              kullanici_soyadi = :lastname,
+              kullanici_email = :email,
+              kullanici_tel = :phone,
+              kullanici_sifre = :password 
+          WHERE kullanici_id = 4;";
 
             $stmt = $pdo->prepare($query);
 
-            $stmt->bindParam(":kullanici_adi", $firstname);
-            $stmt->bindParam(":kullanici_soyadi", $lastname);
-            $stmt->bindParam(":kullanici_email", $email);
-            $stmt->bindParam(":kullanici_tel", $phone);
-            $stmt->bindParam(":kullanici_sifre", $password);
+            $stmt->bindParam(":firstname", $firstname);
+            $stmt->bindParam(":lastname", $lastname);
+            $stmt->bindParam(":email", $email);
+            $stmt->bindParam(":phone", $phone);
+            $stmt->bindParam(":password", $password);
+
 
             $stmt->execute();
 
@@ -32,7 +34,13 @@
             header("Location: ../piyasalar-after-login.html");
 
             die();
+            
         } catch (PDOException $e) {
+            echo $firstname;
+            echo $lastname;
+            echo $email;
+            echo $phone;
+            echo $password;
             die("Sorgu başarısız". $e->getMessage());  
         }
     } else {
