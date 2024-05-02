@@ -1,3 +1,15 @@
+<?php
+require_once "includes/dbh.inc.php";
+
+$userId = 8;
+
+$stmt = $pdo->prepare("SELECT kullanici_adi, kullanici_soyadi, kullanici_email, kullanici_tel FROM kullanici WHERE kullanici_id = :userId");
+$stmt->bindParam(':userId', $userId, PDO::PARAM_INT);
+$stmt->execute();
+
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,8 +56,7 @@
       <div class="signup-form">
         <div class="signup">
           <h1 style="text-align: center">Hesap Bilgileri</h1>
-
-          <div id="account-info" style="padding-left: 100px">
+          <div id="account-info" style="padding-left: 40px">
             <div>
               <span>İsim:</span><br />
               <span>Soyisim:</span><br />
@@ -54,10 +65,10 @@
             </div>
 
             <div style="padding-left: 40px">
-              <span>İsim</span><br />
-              <span>Soyisim</span><br />
-              <span>Email</span><br />
-              <span>Telefon</span>
+              <span><?php echo $user['kullanici_adi'];?></span><br />
+              <span><?php echo $user['kullanici_soyadi'];?></span><br />
+              <span><?php echo $user['kullanici_email'];?></span><br />
+              <span><?php echo $user['kullanici_tel'];?></span>
             </div>
           </div>
 
