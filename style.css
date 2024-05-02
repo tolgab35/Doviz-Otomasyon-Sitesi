@@ -226,10 +226,12 @@ body,
   height: auto;
   margin: 80px auto;
   border-radius: 10px;
-  text-align: center;
+
   padding-top: 10px;
   padding-bottom: 20px;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-evenly;
 }
 .signup-form input {
   background-color: #fbfbfb;
@@ -383,4 +385,8 @@ form .drop-list {
 }
 .wrapper form button:hover {
   background: #4534fe;
+}
+
+#account-info {
+  display: flex;
 }

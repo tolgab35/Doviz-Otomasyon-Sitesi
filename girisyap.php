@@ -19,13 +19,13 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="logo">döviztakip</a>
+      <a href="index.php" class="logo">döviztakip</a>
 
       <nav class="navbar">
-        <a href="index.html">Anasayfa</a>
-        <a href="piyasalar.html">Piyasalar</a>
-        <a href="kayitol.html">Kayıt Ol</a>
-        <a href="girisyap.html" class="girisyap active">Giriş Yap</a>
+        <a href="index.php">Anasayfa</a>
+        <a href="piyasalar.php">Piyasalar</a>
+        <a href="kayitol.php">Kayıt Ol</a>
+        <a href="girisyap.php" class="girisyap active">Giriş Yap</a>
       </nav>
     </header>
 
@@ -34,7 +34,7 @@
       <div class="signup">
         <h1>Giriş Yap</h1>
 
-        <form action="login-form.php" method="post">
+        <form action="includes/login-form.php" method="post">
           <p>
             <input
               type="text"
