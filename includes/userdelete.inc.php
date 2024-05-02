@@ -1,6 +1,6 @@
 <?php
     if($_SERVER["REQUEST_METHOD"] == "POST") {
-        $kullanici_id = "1";
+        $kullanici_id = "8";
 
         try {
             require_once "dbh.inc.php";
