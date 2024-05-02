@@ -28,14 +28,14 @@
   </head>
   <body>
     <header class="header">
-      <a href="piyasalar-after-login.html" class="logo">döviztakip</a>
+      <a href="piyasalar-after-login.php" class="logo">döviztakip</a>
 
       <nav class="navbar">
-        <a href="piyasalar-after-login.html">Piyasalar</a>
-        <a href="alsat.html">Al - Sat</a>
-        <a href="cuzdan.html">Cüzdan</a>
-        <a href="hesap.html" class="active">Hesap</a>
-        <a href="index.html" class="girisyap">Çıkış Yap</a>
+        <a href="piyasalar-after-login.php">Piyasalar</a>
+        <a href="alsat.php">Al - Sat</a>
+        <a href="cuzdan.php">Cüzdan</a>
+        <a href="hesap.php" class="active">Hesap</a>
+        <a href="index.php" class="girisyap">Çıkış Yap</a>
       </nav>
     </header>
 

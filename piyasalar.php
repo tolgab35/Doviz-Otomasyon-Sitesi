@@ -28,13 +28,13 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="logo">döviztakip</a>
+      <a href="index.php" class="logo">döviztakip</a>
 
       <nav class="navbar">
-        <a href="index.html">Anasayfa</a>
-        <a href="piyasalar.html" class="active">Piyasalar</a>
-        <a href="kayitol.html">Kayıt Ol</a>
-        <a href="girisyap.html" class="girisyap">Giriş Yap</a>
+        <a href="index.php">Anasayfa</a>
+        <a href="piyasalar.php" class="active">Piyasalar</a>
+        <a href="kayitol.php">Kayıt Ol</a>
+        <a href="girisyap.php" class="girisyap">Giriş Yap</a>
       </nav>
     </header>
 
