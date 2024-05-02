@@ -30,7 +30,7 @@
             $pdo = null;
             $stmt = null;
 
-            header("Location: ../piyasalar-after-login.html");
+            header("Location: ../piyasalar-after-login.php");
 
             die();
             
@@ -43,5 +43,5 @@
             die("Sorgu başarısız". $e->getMessage());  
         }
     } else {
-        header("Location: ../index.html");
+        header("Location: ../index.php");
     }
