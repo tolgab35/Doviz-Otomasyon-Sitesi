@@ -56,7 +56,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
       <div class="signup-form">
         <div class="signup">
           <h1 style="text-align: center">Hesap Bilgileri</h1>
-          <div id="account-info" style="padding-left: 40px">
+          <div id="account-info">
             <div>
               <span>İsim:</span><br />
               <span>Soyisim:</span><br />
@@ -85,7 +85,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
           </form>
         </div>
 
-        <div class="signup" style="padding-left: 50px">
+        <div class="signup" style="padding-left: 15%">
           <h1 style="text-align: center">Bilgileri Düzenle</h1>
 
           <form action="includes/userupdate.inc.php" method="post">
