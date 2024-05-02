@@ -10,12 +10,12 @@
             require_once "dbh.inc.php";
 
             $query = "UPDATE kullanici 
-          SET kullanici_adi = :firstname, 
-              kullanici_soyadi = :lastname,
-              kullanici_email = :email,
-              kullanici_tel = :phone,
-              kullanici_sifre = :password 
-          WHERE kullanici_id = 4;";
+            SET kullanici_adi = :firstname, 
+                kullanici_soyadi = :lastname,
+                kullanici_email = :email,
+                kullanici_tel = :phone,
+                kullanici_sifre = :password 
+            WHERE kullanici_id = 4;";
 
             $stmt = $pdo->prepare($query);
 
@@ -24,7 +24,6 @@
             $stmt->bindParam(":email", $email);
             $stmt->bindParam(":phone", $phone);
             $stmt->bindParam(":password", $password);
-
 
             $stmt->execute();
 
