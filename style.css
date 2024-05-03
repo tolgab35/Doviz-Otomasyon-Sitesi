@@ -390,3 +390,7 @@ form .drop-list {
 #account-info {
   display: flex;
 }
+
+.form-error {
+  color: red !important;
+}
