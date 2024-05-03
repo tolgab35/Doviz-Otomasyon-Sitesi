@@ -34,7 +34,7 @@
       <div class="signup">
         <h1>Hesap oluştur</h1>
 
-        <form action="includes/signup-form.php" method="post">
+        <form action="includes/signup.inc.php" method="post">
           <p>
             <input
               type="text"
@@ -94,7 +94,7 @@
 
           <br />
           <span>
-            <p>Zaten hesabınız var mı? <a href="girisyap.html">Giriş Yap</a></p>
+            <p>Zaten hesabınız var mı? <a href="girisyap.php">Giriş Yap</a></p>
           </span>
         </form>
       </div>

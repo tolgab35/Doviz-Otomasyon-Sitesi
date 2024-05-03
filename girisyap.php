@@ -34,7 +34,7 @@
       <div class="signup">
         <h1>Giriş Yap</h1>
 
-        <form action="includes/login-form.php" method="post">
+        <form action="includes/login.inc.php" method="post">
           <p>
             <input
               type="text"
