@@ -45,4 +45,5 @@
         }
     } else {
         header("Location: ../index.php");
+        die();
     }

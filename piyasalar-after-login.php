@@ -1,3 +1,5 @@
+<?php require_once "web-scraper/currency-scraper.php" ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,7 +37,7 @@
         <a href="alsat.php">Al - Sat</a>
         <a href="cuzdan.php">Cüzdan</a>
         <a href="hesap.php">Hesap</a>
-        <a href="index.php" class="girisyap">Çıkış Yap</a>
+        <a href="index.php" id="logout-link" class="girisyap">Çıkış Yap</a>
       </nav>
     </header>
 
@@ -441,5 +443,12 @@
         <p>&copy Copyright 2024. Tüm hakları saklıdır.</p>
       </div>
     </footer>
+    <script>
+      document.getElementById('logout-link').addEventListener('click', function(e) {
+          e.preventDefault();
+          window.location.href = 'includes/logout.inc.php'; // Çıkış yapılacak sayfaya yönlendir
+      });
+    </script>
+
   </body>
 </html>

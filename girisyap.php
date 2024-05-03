@@ -1,3 +1,9 @@
+<?php
+require_once 'includes/config_session.inc.php';
+require_once 'includes/login_view.inc.php';
+require_once 'includes/signup_view.inc.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,7 +21,7 @@
     />
 
     <link rel="icon" href="images/favicon.svg" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css?version=1.5">
   </head>
   <body>
     <header class="header">
@@ -36,22 +42,10 @@
 
         <form action="includes/login.inc.php" method="post">
           <p>
-            <input
-              type="text"
-              name="signup-email"
-              id="email"
-              required="zorunlu"
-              placeholder="Email"
-            />
+            <input type="text" name="login-email" id="email" placeholder="Email"/>
           </p>
           <p>
-            <input
-              type="password"
-              name="signup-password"
-              id="password"
-              required="zorunlu"
-              placeholder="Şifre"
-            />
+            <input type="password" name="login-password" id="password" placeholder="Şifre"/>
           </p>
 
           <button type="submit" name="send_registration" id="registration">
@@ -62,6 +56,9 @@
             <p>Henüz hesabınız yok mu? <a href="kayitol.html">Kayıt Ol</a></p>
           </span>
         </form>
+        <?php
+        check_login_errors();
+        ?>
       </div>
     </div>
 

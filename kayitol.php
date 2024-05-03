@@ -20,7 +20,7 @@ require_once 'includes/signup_view.inc.php';
     />
 
     <link rel="icon" href="images/favicon.svg" />
-    <link rel="stylesheet" type="text/css" href="style.css?version=1.2">
+    <link rel="stylesheet" type="text/css" href="style.css?version=1.5">
   </head>
   <body>
     <header class="header">

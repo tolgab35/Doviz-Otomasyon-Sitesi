@@ -28,7 +28,7 @@ if ($usdElement->count() > 0) {
 
         // Verileri döngü ile ekleyebilirsiniz
         $stmt->execute();
-        echo "Veriler başarıyla veritabanına aktarıldı.";
+        //echo "Veriler başarıyla veritabanına aktarıldı.";
     } catch (PDOException $e) {
         echo "Veritabanı hatası: " . $e->getMessage();
     }

@@ -392,5 +392,7 @@ form .drop-list {
 }
 
 .form-error {
+  font-size: 14px !important;
   color: red !important;
+  text-align: center;
 }
