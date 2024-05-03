@@ -25,3 +25,7 @@ function is_email_registered(object $pdo, string $email) {
         return false;
     }
 }
+
+function create_user(object $pdo, string $firstname, string $lastname, string $email, $phone, string $password) {
+    set_user($pdo, $firstname, $lastname, $email, $phone, $password);    
+}

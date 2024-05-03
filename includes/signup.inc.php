@@ -29,10 +29,18 @@
             if($errors) {
                 $_SESSION["errors_signup"] = $errors;
                 header("Location: ../kayitol.php");
-
                 die();
             }
 
+            create_user($pdo, $firstname, $lastname, $email, $phone, $password);
+           
+            header("Location: ../piyasalar-after-login.php?signup=success");
+
+            $pdo = null;
+            $stmt = null;
+
+            die();
+            /*
             $query = "INSERT INTO kullanici (kullanici_adi, kullanici_soyadi, kullanici_email, kullanici_tel, kullanici_sifre) 
             VALUES (:kullanici_adi, :kullanici_soyadi, :kullanici_email, :kullanici_tel, :kullanici_sifre);";
 
@@ -52,6 +60,7 @@
             header("Location: ../piyasalar-after-login.php");
 
             die();
+            */
         } catch (PDOException $e) {
             die("Sorgu başarısız". $e->getMessage());  
         }
