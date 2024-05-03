@@ -41,44 +41,19 @@ require_once 'includes/signup_view.inc.php';
 
         <form action="includes/signup.inc.php" method="post">
           <p>
-            <input
-              type="text"
-              name="signup-firstname"
-              id="firstname"
-              placeholder="İsim"
-            />
+            <input type="text" name="signup-firstname" id="firstname" placeholder="İsim"/>
           </p>
           <p>
-            <input
-              type="text"
-              name="signup-lastname"
-              id="lastname"
-              placeholder="Soyisim"
-            />
+            <input type="text" name="signup-lastname" id="lastname" placeholder="Soyisim"/>
           </p>
           <p>
-            <input
-              type="text"
-              name="signup-email"
-              id="email"
-              placeholder="Email"
-            />
+            <input type="text" name="signup-email" id="email" placeholder="Email"/>
           </p>
           <p>
-            <input
-              type="text"
-              name="signup-phone"
-              id="password"
-              placeholder="Telefon"
-            />
+            <input type="text" name="signup-phone" id="password" placeholder="Telefon"/>
           </p>
           <p>
-            <input
-              type="password"
-              name="signup-password"
-              id="password"
-              placeholder="Şifre"
-            />
+            <input type="password" name="signup-password" id="password" placeholder="Şifre"/>
           </p>
 
           <button type="submit" name="send_registration" id="registration">
