@@ -90,8 +90,8 @@
             />
             USD - Amerikan Doları
           </td>
-          <td>32,5443</td>
-          <td>32,5719</td>
+          <td><?php echo $exchangeRateUsdAlis;?></td>
+          <td><?php echo $exchangeRateUsdSatis;?></td>
           <td>
             <input type="text" name="usd" id="usd" class="piyasalar-textbox" />
           </td>
@@ -104,8 +104,8 @@
             <img width="23" height="15" alt="Euro" src="images/flags/eur.png" />
             EUR - Euro
           </td>
-          <td>34,3100</td>
-          <td>34,3575</td>
+          <td><?php echo $exchangeRateEurAlis;?></td>
+          <td><?php echo $exchangeRateEurSatis;?></td>
           <td>
             <input type="text" name="eur" id="eur" class="piyasalar-textbox" />
           </td>
@@ -123,8 +123,8 @@
             />
             GBP - İngiliz Sterlini
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateGbpAlis;?></td>
+          <td><?php echo $exchangeRateGbpSatis;?></td>
           <td>
             <input type="text" name="gbp" id="gbp" class="piyasalar-textbox" />
           </td>
@@ -142,8 +142,8 @@
             />
             CHF - İsviçre Frangı
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateChfAlis;?></td>
+          <td><?php echo $exchangeRateChfSatis;?></td>
           <td>
             <input type="text" name="chf" id="chf" class="piyasalar-textbox" />
           </td>
@@ -161,8 +161,8 @@
             />
             CAD - Kanada Doları
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateCadAlis;?></td>
+          <td><?php echo $exchangeRateCadSatis;?></td>
           <td>
             <input type="text" name="cad" id="cad" class="piyasalar-textbox" />
           </td>
@@ -180,8 +180,8 @@
             />
             RUB - Rus Rublesi
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateRubAlis;?></td>
+          <td><?php echo $exchangeRateRubSatis;?></td>
           <td>
             <input type="text" name="rub" id="rub" class="piyasalar-textbox" />
           </td>
@@ -199,8 +199,8 @@
             />
             AED - BAE Dirhemi
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateAedAlis;?></td>
+          <td><?php echo $exchangeRateAedSatis;?></td>
           <td>
             <input type="text" name="aed" id="aed" class="piyasalar-textbox" />
           </td>
@@ -218,8 +218,8 @@
             />
             AUD - Avustralya Doları
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateAudAlis;?></td>
+          <td><?php echo $exchangeRateAudSatis;?></td>
           <td>
             <input type="text" name="aud" id="aud" class="piyasalar-textbox" />
           </td>
@@ -237,8 +237,8 @@
             />
             DKK - Danimarka Kronu
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateDkkAlis;?></td>
+          <td><?php echo $exchangeRateDkkSatis;?></td>
           <td>
             <input type="text" name="dkk" id="dkk" class="piyasalar-textbox" />
           </td>
@@ -256,8 +256,8 @@
             />
             SEK - İsveç Kronu
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateSekAlis;?></td>
+          <td><?php echo $exchangeRateSekSatis;?></td>
           <td>
             <input type="text" name="sek" id="sek" class="piyasalar-textbox" />
           </td>
@@ -275,8 +275,8 @@
             />
             NOK - Norveç Kronu
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateNokAlis;?></td>
+          <td><?php echo $exchangeRateNokSatis;?></td>
           <td>
             <input type="text" name="nok" id="nok" class="piyasalar-textbox" />
           </td>
@@ -294,8 +294,8 @@
             />
             JPY - Japon Yeni
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateJpyAlis;?></td>
+          <td><?php echo $exchangeRateJpySatis;?></td>
           <td>
             <input type="text" name="jpy" id="jpy" class="piyasalar-textbox" />
           </td>
@@ -313,8 +313,8 @@
             />
             KWD - Kuveyt Dinarı
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateKwdAlis;?></td>
+          <td><?php echo $exchangeRateKwdSatis;?></td>
           <td>
             <input type="text" name="kwd" id="kwd" class="piyasalar-textbox" />
           </td>
@@ -332,8 +332,8 @@
             />
             ZAR - Güney Afrika Randı
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateZarAlis;?></td>
+          <td><?php echo $exchangeRateZarSatis;?></td>
           <td>
             <input type="text" name="zar" id="zar" class="piyasalar-textbox" />
           </td>
@@ -351,8 +351,8 @@
             />
             BHD - Bahreyn Dinarı
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateBhdAlis;?></td>
+          <td><?php echo $exchangeRateBhdSatis;?></td>
           <td>
             <input type="text" name="bhd" id="bhd" class="piyasalar-textbox" />
           </td>
@@ -370,8 +370,8 @@
             />
             LYD - Libya Dinarı
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateLydAlis;?></td>
+          <td><?php echo $exchangeRateLydSatis;?></td>
           <td>
             <input type="text" name="lyd" id="lyd" class="piyasalar-textbox" />
           </td>
@@ -389,8 +389,8 @@
             />
             SAR - Suudi Arabistan Riyali
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateSarAlis;?></td>
+          <td><?php echo $exchangeRateSarSatis;?></td> 
           <td>
             <input type="text" name="sar" id="sar" class="piyasalar-textbox" />
           </td>
@@ -408,8 +408,8 @@
             />
             IQD - Irak Dinarı
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateIqdAlis;?></td>
+          <td><?php echo $exchangeRateIqdSatis;?></td>
           <td>
             <input type="text" name="iqd" id="iqd" class="piyasalar-textbox" />
           </td>
@@ -427,8 +427,8 @@
             />
             ILS - İsrail Şekeli
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td><?php echo $exchangeRateIlsAlis;?></td>
+          <td><?php echo $exchangeRateIlsSatis;?></td>
           <td>
             <input type="text" name="ils" id="ils" class="piyasalar-textbox" />
           </td>
