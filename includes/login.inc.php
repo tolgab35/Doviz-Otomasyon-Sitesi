@@ -1,4 +1,5 @@
 <?php
+
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["login-email"];
     $password = $_POST["login-password"];
@@ -33,15 +34,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         $newSessionId = session_create_id();
-        $sessionId = $newSessionId . "_" . $result["id"];
+        $sessionId = $newSessionId . "_" . $result["kullanici_id"];
         session_id($sessionId);
 
-        $_SESSION["user_id"] = $result["id"];
-        $_SESSION["user_username"] = htmlspecialchars($result["username"]);
+        $_SESSION["kullanici_id"] = $result["kullanici_id"];
+        $_SESSION["kullanici_email"] = htmlspecialchars($result["kullanici_email"]);
 
         $_SESSION["last_regeneration"] = time();
 
-        header("Location: ../piyasalar-after-login.php?login=success");
+        header("Location: ../hesap.php?login=success");
 
         $pdo = null;
         $stmt = null;

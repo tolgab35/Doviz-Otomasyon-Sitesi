@@ -200,7 +200,7 @@ $exchangeRateIlsSatis = str_replace(',', '.', $exchangeRateTextIlsSatis);
 
 try {
     // Örnek veritabanı ekleme işlemi
-    $stmt = $pdo->prepare('INSERT INTO doviz (doviz_kod, doviz_alis, doviz_satis) VALUES (:currency, :exchangeRateAlis, :exchangeRateSatis)');
+    $stmt = $pdo->prepare('UPDATE doviz SET doviz_alis = :exchangeRateAlis, doviz_satis = :exchangeRateSatis WHERE doviz_kod = :currency');
 
     // USD için veri ekleme
     $stmt->bindValue(':currency', 'USD');

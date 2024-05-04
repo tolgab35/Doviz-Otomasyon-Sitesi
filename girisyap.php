@@ -53,7 +53,7 @@ require_once 'includes/signup_view.inc.php';
           </button>
           <br /><br />
           <span>
-            <p>Henüz hesabınız yok mu? <a href="kayitol.html">Kayıt Ol</a></p>
+            <p>Henüz hesabınız yok mu? <a href="kayitol.php">Kayıt Ol</a></p>
           </span>
         </form>
         <?php

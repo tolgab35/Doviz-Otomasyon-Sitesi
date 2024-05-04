@@ -28,6 +28,8 @@ Bu adımları takip ederek projeyi yerel ortamda çalıştırabilirsiniz.
 
 3. Gerekli PHP paketlerini yükleyin
 
+   Composer-Setup.exe setup dosyasını
+
    ```
    composer install
    ```
