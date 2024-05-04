@@ -262,6 +262,12 @@ try {
     $stmt->bindValue(':exchangeRateSatis', $exchangeRateSekSatis);
     $stmt->execute();
 
+    // NOK için veri ekleme
+    $stmt->bindValue(':currency', 'NOK');
+    $stmt->bindValue(':exchangeRateAlis', $exchangeRateNokAlis);
+    $stmt->bindValue(':exchangeRateSatis', $exchangeRateNokSatis);
+    $stmt->execute();
+
     // JPY için veri ekleme
     $stmt->bindValue(':currency', 'JPY');
     $stmt->bindValue(':exchangeRateAlis', $exchangeRateJpyAlis);
