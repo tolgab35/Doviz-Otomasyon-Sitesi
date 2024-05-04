@@ -390,3 +390,9 @@ form .drop-list {
 #account-info {
   display: flex;
 }
+
+.form-error {
+  font-size: 14px !important;
+  color: red !important;
+  text-align: center;
+}

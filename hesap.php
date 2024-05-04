@@ -1,7 +1,7 @@
 <?php
 require_once "includes/dbh.inc.php";
 
-$userId = 8;
+$userId = 17;
 
 $stmt = $pdo->prepare("SELECT kullanici_adi, kullanici_soyadi, kullanici_email, kullanici_tel FROM kullanici WHERE kullanici_id = :userId");
 $stmt->bindParam(':userId', $userId, PDO::PARAM_INT);
