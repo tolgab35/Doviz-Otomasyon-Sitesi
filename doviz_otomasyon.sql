@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 03, 2024 at 04:46 PM
+-- Generation Time: May 04, 2024 at 03:04 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -46,7 +46,6 @@ CREATE TABLE `doviz` (
   `doviz_kod` varchar(3) DEFAULT NULL,
   `doviz_alis` decimal(10,4) DEFAULT NULL,
   `doviz_satis` decimal(10,4) DEFAULT NULL,
-  `favori_doviz` tinyint(1) DEFAULT NULL,
   `doviz_tarih` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -54,55 +53,63 @@ CREATE TABLE `doviz` (
 -- Dumping data for table `doviz`
 --
 
-INSERT INTO `doviz` (`doviz_id`, `doviz_kod`, `doviz_alis`, `doviz_satis`, `favori_doviz`, `doviz_tarih`) VALUES
-(134, 'USD', 32.3406, 32.3464, NULL, '2024-05-03 16:01:54'),
-(135, 'EUR', 34.9168, 34.9263, NULL, '2024-05-03 16:01:54'),
-(136, 'GBP', 40.7987, 40.8271, NULL, '2024-05-03 16:01:54'),
-(137, 'CHF', 35.7875, 35.8024, NULL, '2024-05-03 16:01:54'),
-(138, 'CAD', 23.7188, 23.7283, NULL, '2024-05-03 16:01:54'),
-(139, 'RUB', 0.3531, 0.3532, NULL, '2024-05-03 16:01:54'),
-(140, 'AED', 8.8037, 8.8071, NULL, '2024-05-03 16:01:54'),
-(141, 'AUD', 21.4422, 21.4537, NULL, '2024-05-03 16:01:54'),
-(142, 'DKK', 4.6776, 4.6795, NULL, '2024-05-03 16:01:54'),
-(143, 'SEK', 3.0017, 3.0031, NULL, '2024-05-03 16:01:54'),
-(144, 'JPY', 21.2500, 21.2900, NULL, '2024-05-03 16:01:54'),
-(145, 'KWD', 105.0296, 105.4214, NULL, '2024-05-03 16:01:54'),
-(146, 'ZAR', 1.7550, 1.7557, NULL, '2024-05-03 16:01:54'),
-(147, 'BHD', 85.7880, 85.8055, NULL, '2024-05-03 16:01:54'),
-(148, 'LYD', 6.6421, 6.6435, NULL, '2024-05-03 16:01:54'),
-(149, 'SAR', 8.6260, 8.6294, NULL, '2024-05-03 16:01:54'),
-(150, 'IQD', 0.0247, 0.0247, NULL, '2024-05-03 16:01:54'),
-(151, 'ILS', 8.7256, 8.7272, NULL, '2024-05-03 16:01:54'),
-(152, 'USD', 32.3375, 32.3408, NULL, '2024-05-03 17:42:43'),
-(153, 'EUR', 34.8204, 34.8378, NULL, '2024-05-03 17:42:43'),
-(154, 'GBP', 40.6025, 40.6268, NULL, '2024-05-03 17:42:43'),
-(155, 'CHF', 35.7010, 35.7165, NULL, '2024-05-03 17:42:43'),
-(156, 'CAD', 23.6397, 23.6473, NULL, '2024-05-03 17:42:43'),
-(157, 'RUB', 0.3531, 0.3532, NULL, '2024-05-03 17:42:43'),
-(158, 'AED', 8.8032, 8.8062, NULL, '2024-05-03 17:42:43'),
-(159, 'AUD', 21.3587, 21.3675, NULL, '2024-05-03 17:42:43'),
-(160, 'DKK', 4.6655, 4.6671, NULL, '2024-05-03 17:42:43'),
-(161, 'SEK', 2.9874, 2.9909, NULL, '2024-05-03 17:42:43'),
-(162, 'JPY', 21.1300, 21.2200, NULL, '2024-05-03 17:42:43'),
-(163, 'KWD', 105.0538, 105.4033, NULL, '2024-05-03 17:42:43'),
-(164, 'ZAR', 1.7451, 1.7459, NULL, '2024-05-03 17:42:43'),
-(165, 'BHD', 85.7781, 85.7869, NULL, '2024-05-03 17:42:43'),
-(166, 'LYD', 6.6414, 6.6420, NULL, '2024-05-03 17:42:43'),
-(167, 'SAR', 8.6126, 8.6298, NULL, '2024-05-03 17:42:43'),
-(168, 'IQD', 0.0247, 0.0247, NULL, '2024-05-03 17:42:43'),
-(169, 'ILS', 8.6983, 8.6991, NULL, '2024-05-03 17:42:43');
+INSERT INTO `doviz` (`doviz_id`, `doviz_kod`, `doviz_alis`, `doviz_satis`, `doviz_tarih`) VALUES
+(1, 'USD', 32.3350, 32.3400, '2024-05-04 15:56:58'),
+(2, 'EUR', 34.7427, 34.8790, '2024-05-04 15:56:58'),
+(3, 'GBP', 40.5131, 40.6534, '2024-05-04 15:56:58'),
+(4, 'CHF', 35.7174, 35.7427, '2024-05-04 15:56:58'),
+(5, 'CAD', 23.6212, 23.6328, '2024-05-04 15:56:58'),
+(6, 'RUB', 0.3526, 0.3530, '2024-05-04 15:56:58'),
+(7, 'AED', 8.8023, 8.8057, '2024-05-04 15:56:58'),
+(8, 'AUD', 21.3622, 21.3826, '2024-05-04 15:56:58'),
+(9, 'DKK', 4.6648, 4.6675, '2024-05-04 15:56:58'),
+(10, 'SEK', 2.9863, 2.9915, '2024-05-04 15:56:58'),
+(11, 'NOK', 2.9715, 2.9779, '2024-05-04 15:56:58'),
+(12, 'JPY', 21.1100, 21.2300, '2024-05-04 15:56:58'),
+(13, 'KWD', 104.9555, 105.4579, '2024-05-04 15:56:58'),
+(14, 'ZAR', 1.7468, 1.7487, '2024-05-04 15:56:58'),
+(15, 'BHD', 85.7715, 85.7848, '2024-05-04 15:56:58'),
+(16, 'LYD', 6.6328, 6.6338, '2024-05-04 15:56:58'),
+(17, 'SAR', 8.6152, 8.6286, '2024-05-04 15:56:58'),
+(18, 'IQD', 0.0247, 0.0247, '2024-05-04 15:56:58'),
+(19, 'ILS', 8.7192, 8.7205, '2024-05-04 15:56:58');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `haber`
+-- Table structure for table `favori`
 --
 
-CREATE TABLE `haber` (
-  `haber_id` int(11) NOT NULL,
-  `haber_baslik` varchar(100) DEFAULT NULL,
-  `haber_icerik` text DEFAULT NULL
+CREATE TABLE `favori` (
+  `favori_doviz_ID` int(11) NOT NULL,
+  `doviz_id` int(11) DEFAULT NULL,
+  `favorimi` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `favori`
+--
+
+INSERT INTO `favori` (`favori_doviz_ID`, `doviz_id`, `favorimi`) VALUES
+(100, 1, 0),
+(200, 2, 0),
+(300, 3, 0),
+(400, 4, 0),
+(500, 5, 0),
+(600, 6, 0),
+(700, 7, 0),
+(800, 8, 0),
+(900, 9, 0),
+(1000, 10, 0),
+(1100, 11, 0),
+(1200, 12, 0),
+(1300, 13, 0),
+(1400, 14, 0),
+(1500, 15, 0),
+(1600, 16, 0),
+(1700, 17, 0),
+(1800, 18, 0),
+(1900, 19, 0);
 
 -- --------------------------------------------------------
 
@@ -140,7 +147,10 @@ CREATE TABLE `kullanici` (
 --
 
 INSERT INTO `kullanici` (`kullanici_id`, `kullanici_adi`, `kullanici_soyadi`, `kullanici_email`, `kullanici_tel`, `kullanici_sifre`, `kayit_tarihi`, `cuzdan_id_fk`) VALUES
-(17, 'Tolga', 'Boz', 'tolgaboz@gmail.com', 5554443322, '$2y$12$jJBuJWZtZUO5OTRuci3MCuEsjwg2PPvav2B2xZ6zmy8GBlWN3bEW.', '2024-05-03 13:27:15', NULL);
+(17, 'Tolga', 'Boz', 'tolgaboz@gmail.com', 5554443322, '$2y$12$jJBuJWZtZUO5OTRuci3MCuEsjwg2PPvav2B2xZ6zmy8GBlWN3bEW.', '2024-05-03 13:27:15', NULL),
+(18, 'Alperen', 'Ovalı', 'alperen@gmail.com', 5527773333, '$2y$12$BsCcP.cp1Q0beabkjqt1GeyJA7HUi.R24cVI7yju75Pl6wMHVEcha', '2024-05-04 12:33:07', NULL),
+(19, 'Mahmut', 'Murteza', 'mahmut@gmail.com', 5527773334, '$2y$12$OupkFg2xxQa38vNXk56QaObGxoCwpZzMe/Eaz3jgUH0Sa/vMs1TI6', '2024-05-04 14:31:34', NULL),
+(20, 'hüsnü', 'koçer', 'husnu@gmail.com', 1112223322, '$2y$12$JC2/s9EXAlIxD11.SWMKYOAQvpNeBLgtF4H6wNRmmdP0t8LqB3lPm', '2024-05-04 14:34:30', NULL);
 
 --
 -- Indexes for dumped tables
@@ -161,10 +171,11 @@ ALTER TABLE `doviz`
   ADD PRIMARY KEY (`doviz_id`);
 
 --
--- Indexes for table `haber`
+-- Indexes for table `favori`
 --
-ALTER TABLE `haber`
-  ADD PRIMARY KEY (`haber_id`);
+ALTER TABLE `favori`
+  ADD PRIMARY KEY (`favori_doviz_ID`),
+  ADD KEY `doviz_id` (`doviz_id`);
 
 --
 -- Indexes for table `islem`
@@ -194,13 +205,13 @@ ALTER TABLE `cuzdan`
 -- AUTO_INCREMENT for table `doviz`
 --
 ALTER TABLE `doviz`
-  MODIFY `doviz_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170;
+  MODIFY `doviz_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=550;
 
 --
--- AUTO_INCREMENT for table `haber`
+-- AUTO_INCREMENT for table `favori`
 --
-ALTER TABLE `haber`
-  MODIFY `haber_id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `favori`
+  MODIFY `favori_doviz_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1901;
 
 --
 -- AUTO_INCREMENT for table `islem`
@@ -212,7 +223,7 @@ ALTER TABLE `islem`
 -- AUTO_INCREMENT for table `kullanici`
 --
 ALTER TABLE `kullanici`
-  MODIFY `kullanici_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `kullanici_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- Constraints for dumped tables
@@ -224,6 +235,12 @@ ALTER TABLE `kullanici`
 ALTER TABLE `cuzdan`
   ADD CONSTRAINT `cuzdan_ibfk_1` FOREIGN KEY (`kullanici_id_fk`) REFERENCES `kullanici` (`kullanici_id`),
   ADD CONSTRAINT `cuzdan_ibfk_2` FOREIGN KEY (`islem_id_fk`) REFERENCES `islem` (`islem_id`);
+
+--
+-- Constraints for table `favori`
+--
+ALTER TABLE `favori`
+  ADD CONSTRAINT `favori_ibfk_1` FOREIGN KEY (`doviz_id`) REFERENCES `doviz` (`doviz_id`);
 
 --
 -- Constraints for table `islem`
