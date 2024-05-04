@@ -1,8 +1,8 @@
 <?php
 require_once "includes/dbh.inc.php";
-require_once "includes/login.inc.php";
 
-$userId = 17;
+session_start();
+$userId = $_SESSION["kullanici_id"];
 
 $stmt = $pdo->prepare("SELECT kullanici_adi, kullanici_soyadi, kullanici_email, kullanici_tel FROM kullanici WHERE kullanici_id = :userId");
 $stmt->bindParam(':userId', $userId, PDO::PARAM_INT);
