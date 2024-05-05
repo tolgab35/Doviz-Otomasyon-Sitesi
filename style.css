@@ -289,6 +289,7 @@ body,
   font-size: 34px;
   font-weight: 600;
   color: #000000cf;
+  text-align: center;
 }
 
 ::selection {
