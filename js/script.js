@@ -1,3 +1,5 @@
+// droplist adapted from https://www.codingnepalweb.com/currency-converter-app-in-html-javascript/#google_vignette
+
 const dropList = document.querySelectorAll("form select"),
   fromCurrency = document.querySelector(".from select"),
   toCurrency = document.querySelector(".to select"),

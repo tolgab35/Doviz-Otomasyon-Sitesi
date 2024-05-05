@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 function get_email(object $pdo, string $email) {
-    $query = "SELECT kullanici_email FROM kullanici
+    
+    session_start();
+
+    $query = "SELECT * FROM kullanici
         WHERE kullanici_email = :kullanici_email";
     
     $stmt = $pdo->prepare($query);
