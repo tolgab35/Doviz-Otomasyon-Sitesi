@@ -7,7 +7,7 @@ $userId = $_SESSION["kullanici_id"];
 $stmt = $pdo->prepare("SELECT kullanici_adi, kullanici_soyadi, kullanici_email, kullanici_tel FROM kullanici WHERE kullanici_id = :userId");
 $stmt->bindParam(':userId', $userId, PDO::PARAM_INT);
 $stmt->execute();
-
+/////
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
 
