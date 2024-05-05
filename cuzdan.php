@@ -29,7 +29,7 @@
   <body>
     <header class="header">
       <a href="piyasalar-after-login.php" class="logo">döviztakip</a>
-
+ 
       <nav class="navbar">
         <a href="piyasalar-after-login.php">Piyasalar</a>
         <a href="alsat.php">Al - Sat</a>
