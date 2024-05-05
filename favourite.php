@@ -40,10 +40,10 @@
 
     <section id="piyasalar">
       <div>
-        <h3 id="piyasalar-all"><a href="">Tümü</a></h3>
+        <h3 id="piyasalar-all"><a href="piyasalar.php">Tümü</a></h3>
         <hr style="margin-left: 27px; opacity: 60%" />
         <h3 id="piyasalar-favorites" style="margin-left: 27px">
-          <a href="favourite.php">Favoriler</a>
+          <a href="">Favoriler</a>
         </h3>
       </div>
 
@@ -61,17 +61,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Türk Lirası"
-              src="images/flags/try.png"
+              
             />
-            TRY - Türk Lirası
+            
           </td>
           <td></td>
           <td></td>
           <td>
-            <input type="text" name="try" id="try" class="piyasalar-textbox" />
+            <input type="text" name="try" id="fav_1" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -80,17 +77,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Amerikan Doları"
-              src="images/flags/usd.png"
+              
             />
-            USD - Amerikan Doları
+            
           </td>
-          <td>32,5443</td>
-          <td>32,5719</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="usd" id="usd" class="piyasalar-textbox" />
+            <input type="text" name="usd" id="fav_2" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -98,32 +92,13 @@
             <i class="fa-regular fa-star favorite-star"></i>
           </td>
           <td>
-            <img width="23" height="15" alt="Euro" src="images/flags/eur.png" />
-            EUR - Euro
+            <img />
+            
           </td>
-          <td>34,3100</td>
-          <td>34,3575</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="eur" id="eur" class="piyasalar-textbox" />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <i class="fa-regular fa-star favorite-star"></i>
-          </td>
-          <td>
-            <img
-              width="23"
-              height="15"
-              alt="İngiliz Sterlini"
-              src="images/flags/gbp.png"
-            />
-            GBP - İngiliz Sterlini
-          </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
-          <td>
-            <input type="text" name="gbp" id="gbp" class="piyasalar-textbox" />
+            <input type="text" name="eur" id="fav_3" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -132,17 +107,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="İsviçre Frangı"
-              src="images/flags/chf.png"
+              
             />
-            CHF - İsviçre Frangı
+           
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="chf" id="chf" class="piyasalar-textbox" />
+            <input type="text" name="gbp" id="fav_4" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -151,17 +123,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Kanada Doları"
-              src="images/flags/cad.png"
+              
             />
-            CAD - Kanada Doları
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="cad" id="cad" class="piyasalar-textbox" />
+            <input type="text" name="chf" id="fav_5" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -170,17 +139,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Rus Rublesi"
-              src="images/flags/rub.png"
+              
             />
-            RUB - Rus Rublesi
+        
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="rub" id="rub" class="piyasalar-textbox" />
+            <input type="text" name="cad" id="fav_6" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -189,17 +155,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="BAE Dirhemi"
-              src="images/flags/aed.png"
+              
             />
-            AED - BAE Dirhemi
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="aed" id="aed" class="piyasalar-textbox" />
+            <input type="text" name="rub" id="fav_7" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -208,17 +171,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Avustralya Doları"
-              src="images/flags/aud.png"
+              
             />
-            AUD - Avustralya Doları
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="aud" id="aud" class="piyasalar-textbox" />
+            <input type="text" name="aed" id="fav_8" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -227,17 +187,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Danimarka Kronu"
-              src="images/flags/dkk.png"
+              
             />
-            DKK - Danimarka Kronu
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="dkk" id="dkk" class="piyasalar-textbox" />
+            <input type="text" name="aud" id="fav_9" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -246,17 +203,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="İsveç Kronu"
-              src="images/flags/sek.png"
-            />
-            SEK - İsveç Kronu
+            
+            />  
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="sek" id="sek" class="piyasalar-textbox" />
+            <input type="text" name="dkk" id="fav_10" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -265,17 +219,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Norveç Kronu"
-              src="images/flags/nok.png"
+              
             />
-            NOK - Norveç Kronu
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="nok" id="nok" class="piyasalar-textbox" />
+            <input type="text" name="sek" id="fav_11" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -284,17 +235,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Japon Yeni"
-              src="images/flags/jpy.png"
+              
             />
-            JPY - Japon Yeni
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="jpy" id="jpy" class="piyasalar-textbox" />
+            <input type="text" name="nok" id="fav_12" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -303,17 +251,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Kuveyt Dinarı"
-              src="images/flags/kwd.png"
+              
             />
-            KWD - Kuveyt Dinarı
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="kwd" id="kwd" class="piyasalar-textbox" />
+            <input type="text" name="jpy" id="fav_13" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -322,17 +267,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Güney Afrika Randı"
-              src="images/flags/zar.png"
+              
             />
-            ZAR - Güney Afrika Randı
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="zar" id="zar" class="piyasalar-textbox" />
+            <input type="text" name="kwd" id="fav_14" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -341,17 +283,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Bahreyn Dinarı"
-              src="images/flags/bhd.png"
+              
             />
-            BHD - Bahreyn Dinarı
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="bhd" id="bhd" class="piyasalar-textbox" />
+            <input type="text" name="zar" id="fav_15" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -360,17 +299,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Libya Dinarı"
-              src="images/flags/lyd.png"
+              
             />
-            LYD - Libya Dinarı
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="lyd" id="lyd" class="piyasalar-textbox" />
+            <input type="text" name="bhd" id="fav_16" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -379,17 +315,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Suudi Arabistan Riyali"
-              src="images/flags/sar.png"
+             
             />
-            SAR - Suudi Arabistan Riyali
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="sar" id="sar" class="piyasalar-textbox" />
+            <input type="text" name="lyd" id="fav_17" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -398,17 +331,14 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="Irak Dinarı"
-              src="images/flags/iqd.png"
+              
             />
-            IQD - Irak Dinarı
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="iqd" id="iqd" class="piyasalar-textbox" />
+            <input type="text" name="sar" id="fav_18" class="piyasalar-textbox" />
           </td>
         </tr>
         <tr>
@@ -417,17 +347,30 @@
           </td>
           <td>
             <img
-              width="23"
-              height="15"
-              alt="İsrail Şekeli"
-              src="images/flags/ils.png"
+              
             />
-            ILS - İsrail Şekeli
+            
           </td>
-          <td>37,4500</td>
-          <td>37,5075</td>
+          <td></td>
+          <td></td>
           <td>
-            <input type="text" name="ils" id="ils" class="piyasalar-textbox" />
+            <input type="text" name="iqd" id="fav_19" class="piyasalar-textbox" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fa-regular fa-star favorite-star"></i>
+          </td>
+          <td>
+            <img
+              
+            />
+            
+          </td>
+          <td></td>
+          <td></td>
+          <td>
+            <input type="text" name="ils" id="fav_20" class="piyasalar-textbox" />
           </td>
         </tr>
       </table>

@@ -33,8 +33,8 @@
             }
 
             create_user($pdo, $firstname, $lastname, $email, $phone, $password);
-           
-            header("Location: ../piyasalar-after-login.php?signup=success");
+            
+            header("Location: ../hesap.php?signup=success");
 
             $pdo = null;
             $stmt = null;

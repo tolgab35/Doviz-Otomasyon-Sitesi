@@ -41,7 +41,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $_SESSION["last_regeneration"] = time();
 
-        header("Location: ../piyasalar-after-login.php?login=success");
+        header("Location: ../hesap.php?login=success");
 
         $pdo = null;
         $stmt = null;
