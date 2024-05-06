@@ -70,7 +70,7 @@
             </div>
             <div style="padding-right: 50px; padding-top: 50px;">
               <span style="font-style: italic;">Cardholder</span><br>
-              <span style="font-size: 14px; font-weight: 500;">Tolga K.</span>
+              <span style="font-size: 14px; font-weight: 500;">Alperen O.</span>
             </div>
             <div style="padding-right: 50px; padding-top: 50px;">
               <span style="font-style: italic;">Card Number</span><br>
