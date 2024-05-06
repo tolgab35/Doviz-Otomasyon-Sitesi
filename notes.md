@@ -30,4 +30,6 @@
   UI/UX araştırması yapılıp penpot sitesi üzerinden mockup oluşturuldu. https://penpot.app/
 
 - Kullanıcıların şifre güvenliği
-  Çözüm: Kullanıcı parolalarını veritabanında güvenli bir şekilde saklamak amacıyla bcrypt hashleme algoritması kullanıldı.
+  Çözüm: Kullanıcı parolalarını veritabanında güvenli bir şekilde saklamak amacıyla bcrypt hashleme algoritması kullanıldı. https://www.php.net/manual/en/function.password-hash.php
+
+-

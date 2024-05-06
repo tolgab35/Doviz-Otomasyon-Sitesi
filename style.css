@@ -289,7 +289,6 @@ body,
   font-size: 34px;
   font-weight: 600;
   color: #000000cf;
-  text-align: center;
 }
 
 ::selection {
@@ -396,4 +395,9 @@ form .drop-list {
   font-size: 14px !important;
   color: red !important;
   text-align: center;
+}
+
+#cuzdan {
+  display: flex;
+  justify-content: space-between;
 }
