@@ -1,27 +1,32 @@
 <?php
-    if($_SERVER["REQUEST_METHOD"] == "POST") {
-        $kullanici_id = "8";
+// Eğer bu dosya POST metoduyla çağrılmışsa:
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Kullanıcı kimliği (örneğin: 8) belirle
+    $kullanici_id = "8";
 
-        try {
-            require_once "dbh.inc.php";
+    try {
+        require_once "dbh.inc.php"; // Veritabanı bağlantısını sağlayan dosyayı dahil et
 
-            $query = "DELETE FROM kullanici WHERE kullanici_id = :kullanici_id;";
+        // Kullanıcıyı silme sorgusunu hazırla
+        $query = "DELETE FROM kullanici WHERE kullanici_id = :kullanici_id;";
 
-            $stmt = $pdo->prepare($query);
+        // Sorguyu hazırla ve çalıştır
+        $stmt = $pdo->prepare($query);
+        $stmt->bindParam(":kullanici_id", $kullanici_id);
+        $stmt->execute();
 
-            $stmt->bindParam(":kullanici_id", $kullanici_id);
+        // Bağlantıları kapat ve işlemi sonlandır
+        $pdo = null;
+        $stmt = null;
 
-            $stmt->execute();
-
-            $pdo = null;
-            $stmt = null;
-
-            header("Location: ../piyasalar-after-login.php");
-
-            die();
-        } catch (PDOException $e) {
-            die("Sorgu başarısız". $e->getMessage());  
-        }
-    } else {
-        header("Location: ../index.php");
+        // Ana sayfaya yönlendir
+        header("Location: ../piyasalar-after-login.php");
+        die();
+    } catch (PDOException $e) {
+        die("Sorgu başarısız". $e->getMessage());  
     }
+} 
+// Eğer dosya POST metoduyla çağrılmamışsa, ana sayfaya yönlendir
+else {
+    header("Location: ../index.php");
+}
