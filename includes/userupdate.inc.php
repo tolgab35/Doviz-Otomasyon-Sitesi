@@ -9,16 +9,21 @@
         try {
             require_once "dbh.inc.php";
 
+            session_start();
+
+            $user_id = $_SESSION['kullanici_id'];
+
             $query = "UPDATE kullanici 
-            SET kullanici_adi = :firstname, 
-                kullanici_soyadi = :lastname,
-                kullanici_email = :email,
-                kullanici_tel = :phone,
-                kullanici_sifre = :password 
-            WHERE kullanici_id = 4;";
+                SET kullanici_adi = :firstname, 
+                    kullanici_soyadi = :lastname,
+                    kullanici_email = :email,
+                    kullanici_tel = :phone,
+                    kullanici_sifre = :password 
+                WHERE kullanici_id = :user_id;";
 
             $stmt = $pdo->prepare($query);
 
+            $stmt->bindParam(':userId', $userId, PDO::PARAM_INT);
             $stmt->bindParam(":firstname", $firstname);
             $stmt->bindParam(":lastname", $lastname);
             $stmt->bindParam(":email", $email);
@@ -35,11 +40,6 @@
             die();
             
         } catch (PDOException $e) {
-            echo $firstname;
-            echo $lastname;
-            echo $email;
-            echo $phone;
-            echo $password;
             die("Sorgu başarısız". $e->getMessage());  
         }
     } else {
