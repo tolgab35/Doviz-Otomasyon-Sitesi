@@ -26,33 +26,35 @@ Bu adımları takip ederek projeyi yerel ortamda çalıştırabilirsiniz.
    cd Doviz-Otomasyon-Sitesi
    ```
 
-3. Gerekli PHP paketlerini yükleyin
+3. Composer-Setup.exe setup dosyasını çalıştırın.
 
-   Composer-Setup.exe setup dosyasını
+4. Gerekli PHP paketlerini yüklemek için komut satırından
 
    ```
    composer install
    ```
 
-4. 'config.php' dosyasını düzenleyerek MySQL veritabanı bağlantı bilgilerinizi girin.
+   kodunu çalıştırın.
 
-5. Veritabanı tablolarını oluşturmak için terminalde şu komutu çalıştırın:
+5. XAMPP çalıştırın.
 
-   ```
-   php database/migrate.php
-   ```
+6. Veritabanı tablolarını oluşturmak için PHPMyAdmin üzerinden doviz-otomasyon.sql dosyasını içe aktarın.
 
-6. Sunucuyu başlatın.
-
-   ```
-   php -S localhost:8000
-   ```
-
-Tarayıcınızda http://localhost:8000 adresini ziyaret ederek uygulamayı görebilirsiniz.
+Tarayıcınızda http://localhost/Doviz-Otomasyon-Sitesi adresini ziyaret ederek uygulamayı görebilirsiniz.
 
 ### Kullanım
 
-Ana sayfada güncel döviz kurlarını görebilirsiniz.
+- Kayıt Ol sayfasından veritabanı üzerinde kayıt oluşturabilirsiniz.
+
+- Giriş Yap sayfasından oluşturduğunuz kayıt bilgileriyle giriş yapabilirsiniz.
+
+- Piyasalar sayfasından güncel döviz kurunu görebilirsiniz.
+
+- Al-Sat sayfasından güncel döviz kuruyla alım satım işlemlerinizi yerine getirebilirsiniz.
+
+- Cüzdan sayfasından portföyünüzü görüntüleyip para yükleme işlemlerinizi yapabilirsiniz.
+
+- Hesap sayfasından kişisel bilgilerinizi görüntüleyip isteğe bağlı hesabınızı silebilir veya veritabanındaki bilgilerinizi düzenleyebilirsiniz.
 
 ### Katkıda Bulunma
 
