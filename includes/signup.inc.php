@@ -11,6 +11,7 @@
             require_once "dbh.inc.php";
             require_once "signup_model.inc.php";
             require_once "signup_contr.inc.php";
+            require_once "wallet.php";
 
             // ERROR HANDLERS
             $errors = [];
@@ -46,7 +47,10 @@
             $_SESSION["last_regeneration"] = time();
 
             create_user($pdo, $firstname, $lastname, $email, $phone, $password);
-           
+            
+            $gettedUserId = getUserId($email);
+            createWallet($gettedUserId);
+
             header("Location: ../hesap.php?signup=success");
 
             $pdo = null;
